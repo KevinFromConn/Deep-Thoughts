@@ -1,0 +1,26 @@
+{
+  "name": "deep-thoughts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd client && npm start\" \"cd server && npm run watch\"",
+    "install": "cd server && npm  i && cd ../client && npm i",
+    "seed": "cd server && npm run seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinFromConn/Deep-Thoughts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KevinFromConn/Deep-Thoughts/issues"
+  },
+  "homepage": "https://github.com/KevinFromConn/Deep-Thoughts#readme",
+  "devDependencies": {
+    "concurrently": "^6.3.0"
+  }
+}
